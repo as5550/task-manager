@@ -1,65 +1,72 @@
-# Getting Started with Create React App
+# Task Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The Task Management Dashboard is a web application designed to help users manage their tasks effectively. The dashboard provides an overview of upcoming, overdue, and completed tasks, with the ability to add, edit, delete, and prioritize tasks. It also includes search and filtering features to quickly find tasks based on specific criteria.
 
-In the project directory, you can run:
+### Task Features
+- Task Management:
+    Add Task: Click the "Show Form To Add Task" button to create a new task. Fill out the task form with:
 
-### `npm start`
+    Title: A short description of the task.
+    Description: Detailed information about the task.
+    Due Date: The date when the task is due.
+    Priority Level: Choose between High, Medium, and Low priority.
+    
+    Edit Task: Click on the "Edit" button next to any task to modify its details.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Delete Task: Click on the "Delete" button next to any task to remove it from the list.
 
-The page will reload when you make changes.\
+- Priority Levels:
+    Tasks can be assigned a priority level when they are created or edited:
 
-### `npm run build`
+    High: Urgent tasks that need immediate attention.
+    Medium: Tasks that are important but not urgent.
+    Low: Tasks that can be addressed at a later time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Search and Filter:
+    Search: Use the search bar to find tasks by title or description.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Filter: Filter tasks by:
+    Priority level (High, Medium, Low)
+    Completion status (Upcoming, Overdue, Completed)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+To get started with the project, follow the instructions below to set up the development environment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites:
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/as5550/task-manager.git
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project folder:
+    ```bash
+    cd task-dashboard
+    ```
 
-## Learn More
+3. navigate to the branch:
+    check out the branch `master`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Start the application:
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+The application will be available at `http://localhost:3000` in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 698a104 (Initialize project using Create React App)
+### Optional: To run the application in production mode:
+```bash
+npm run build
+npm run serve
