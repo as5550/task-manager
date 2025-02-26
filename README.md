@@ -51,15 +51,12 @@ To get started with the project, follow the instructions below to set up the dev
     cd task-dashboard
     ```
 
-3. navigate to the branch:
-    check out the branch `master`
-
-4. Install the dependencies:
+3. Install the dependencies:
     ```bash
     npm install
     ```
 
-5. Start the application:
+4. Start the application:
     ```bash
     npm start
     ```
